@@ -8,3 +8,9 @@
     font-size: 22px;
     font-style: italic;
 }
+
+#home{
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-style: italic;
+}

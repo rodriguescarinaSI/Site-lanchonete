@@ -47,14 +47,14 @@
           <div class="card h-100">
             <img src="img/bolinhadequeijo.jpg" class="card-img-top" >
             <div class="card-body">
-              <h5 class="card-title">Bolinha de queijo</h5>
+              <h5 id="bolinha" class="card-title" value="Bolinha de Queijo">Bolinha de queijo</h5>
               <p class="card-text">Deliciosa bolinha de queijo mussarela, com um toque especial de tomate chinês 😍😋🍅 Você não vai perder uma delícia dessas, né? </p>
             </div>
             <div class="card-body">
                 <p class="preco"> Preço: R$ 4.00</p>
                 <div class="input-group mb-3">
-                    <input type="number" class="form-control" placeholder="Quantidade desejada">
-                    <button class="btn btn-outline btn-success" type="button" id="button-addon2">+</button>
+                    <input type="number" class="form-control" id="qtdeBolinha" placeholder="Quantidade desejada">
+                    <button class="btn btn-outline btn-success" type="button" id="button-addon2" onclick="produtos()">+</button>
                   </div>
             </div>
           </div>
@@ -140,6 +140,6 @@
 </div>
 
 
-
+<script src="funcao.js"></script>
 </body>
 </html>

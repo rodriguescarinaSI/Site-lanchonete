@@ -46,15 +46,15 @@
           <div class="card h-100">
             <img src="img/bolinhadequeijo.jpg" class="card-img-top" >
             <div class="card-body">
-              <h5 class="card-title">Bolinha de queijo</h5>
+              <h5 id="bolinha" class="card-title" value="Bolinha de Queijo">Bolinha de queijo</h5>
               <p class="card-text">Deliciosa bolinha de queijo mussarela, com um toque especial de tomate chinês 😍😋🍅 Você não vai perder uma delícia dessas, né? </p>
             </div>
             <div class="card-body">
                 <br><br>
                 <p class="preco"> Preço: R$ 4.00</p>
                 <div class="input-group mb-3">
-                    <input type="number" class="form-control" placeholder="Quantidade desejada">
-                    <button class="btn btn-outline btn-success" type="button" id="button-addon2">+</button>
+                    <input type="number" class="form-control" id="qtdeBolinha" placeholder="Quantidade desejada">
+                    <button class="btn btn-outline btn-success" type="button" id="button-addon2" onclick="produtos()">+</button>
                   </div>
             </div>
           </div>
@@ -103,14 +103,14 @@
             <div class="card-body">
               <h5 class="card-title">Coca Cola</h5>
               <p class="card-text">Co-ca Co-la gostosa e geladinha! Vem cá tomar essa coquinha, só não pode ficar louquinha com essa explosão de gás! 🥤🧊 </p>
+              <div class="input-group mb-3">
+                <input type="number" class="form-control" placeholder="Quantidade desejada">
+                <button class="btn btn-outline btn-success" type="button" id="button-addon2">+</button>
+              </div>
             </div>  
             <div class="card-body">
                 <br>
                 <p class="preco"> Preço: R$ 4.00</p>
-                <div class="input-group mb-3">
-                    <input type="number" class="form-control" placeholder="Quantidade desejada">
-                    <button class="btn btn-outline btn-success" type="button" id="button-addon2">+</button>
-                  </div>
             </div>
           </div>
         </div>
@@ -119,15 +119,15 @@
             <img src="img/cafezinho.jpg  " class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Café</h5>
-              <p class="card-text">Cafézinho mineiro é tudo de bão né meu povo? Vem provar desse grão conosco! </p>
+              <p class="card-text">Cafézinho mineiro é tudo de bão né meu povo? Vem provar desse grão conosco! ☕🔥 </p>
+              <div class="input-group mb-3">
+                <input type="number" class="form-control" placeholder="Quantidade desejada">
+                <button class="btn btn-outline btn-success" type="button" id="button-addon2">+</button>
+              </div>
             </div>
             <div class="card-body">
                 <br><br>
                 <p class="preco"> Preço: R$ 4.00</p>
-                <div class="input-group mb-3">
-                    <input type="number" class="form-control" placeholder="Quantidade desejada">
-                    <button class="btn btn-outline btn-success" type="button" id="button-addon2">+</button>
-                  </div>
             </div>
           </div>
         </div>
@@ -136,7 +136,8 @@
             <img src="img/agua.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Água</h5>
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+              <p class="card-text">Água geladinha, refrescante e com gostinho que quero mais! Água boa assim, só aqui na Lanchonete 5 amigos 💧🍶🧊 </p>
+              
             </div>
             <div class="card-body">
                 <p class="preco"> Preço: R$ 4.00</p>
@@ -180,6 +181,6 @@
 </div>
 
 
-
+<script src="funcao.js"></script>
 </body>
 </html>

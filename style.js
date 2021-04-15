@@ -1,5 +1,8 @@
 function salgadinho{
-    var selecionar = document.getElementById("opc").value;
+    
+    var salgado = document.getElementById("salg").value;
+    var bebida = document.getElementById("beb").value;
+    
     
     if(selecionar == "coxinha"){
         var n1 = parseInt(document.getElementById("v1").value);

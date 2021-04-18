@@ -33,7 +33,7 @@
       </nav>
 </head>
 <body>
-    
+
 <br><br>
     
     <u><h2 id="home"> Menu da Lanchonete </h2></u>
@@ -53,8 +53,11 @@
                 <br><br>
                 <p class="preco"> Preço: R$ 4.00</p>
                 <div class="input-group mb-3">
-                    <input type="number" class="form-control" id="qtdeBolinha" placeholder="Quantidade desejada">
-                    <button class="btn btn-outline btn-success" type="button" id="button-addon2" onclick="produtos()">+</button>
+                 
+                    <input type="number" class="form-control" value="0" id="qtdeBolinha" name="qtdeBolinha" placeholder="Quantidade desejada">
+                    <form>
+                    <button class="btn btn-outline btn-success" type="button"  value="Enviar">+</button>
+                  </form>
                   </div>
             </div>
           </div>
@@ -69,8 +72,10 @@
               <div class="card-body">
                   <p class="preco"> Preço: R$4.00</p>
                   <div class="input-group mb-3">
-                    <input type="number" class="form-control" placeholder="Quantidade desejada">
-                    <button class="btn btn-outline btn-success" type="button" id="button-addon2">+</button>
+                    <input type="number" class="form-control" value="0" id="qtdcoxinha" name="qtdcoxinha" placeholder="Quantidade desejada">
+                    <form>
+                    <button class="btn btn-outline btn-success" type="button"  value="Enviar">+</button>
+                  </form>
                   </div>
               </div>
             </div>
@@ -87,8 +92,10 @@
                 <br>
                 <p class="preco"> Preço: R$ 4.00</p>
                 <div class="input-group mb-3">
-                    <input type="number" class="form-control" placeholder="Quantidade desejada">
-                    <button class="btn btn-outline btn-success" type="button" id="button-addon2">+</button>
+                  <input type="number" class="form-control" value="0" id="qtdenrolado" name="qtdenrolado" placeholder="Quantidade desejada">
+                    <form>
+                    <button class="btn btn-outline btn-success" type="button"  value="Enviar">+</button>
+                  </form>
                   </div>
             </div>
           </div>
@@ -107,8 +114,10 @@
                     <br>
                   <p class="preco"> Preço: R$ 4.00</p>
                   <div class="input-group mb-3">
-                      <input type="number" class="form-control" placeholder="Quantidade desejada">
-                      <button class="btn btn-outline btn-success" type="button" id="button-addon2">+</button>
+                    <input type="number" class="form-control" value="0" id="qtdcoca" name="qtdcoca" placeholder="Quantidade desejada">
+                    <form>
+                    <button class="btn btn-outline btn-success" type="button"  value="Enviar">+</button>
+                  </form>
                     </div>
               </div>
               </div>
@@ -126,8 +135,10 @@
                   <br><br>
                 <p class="preco"> Preço: R$ 4.00</p>
                 <div class="input-group mb-3">
-                    <input type="number" class="form-control" placeholder="Quantidade desejada">
-                    <button class="btn btn-outline btn-success" type="button" id="button-addon2">+</button>
+                  <input type="number" class="form-control" value="0" id="qtdcafe" name="qtdcafe" placeholder="Quantidade desejada">
+                  <form>
+                  <button class="btn btn-outline btn-success" type="button"  value="Enviar">+</button>
+                </form>
                   </div>
             </div>
             </div>
@@ -145,8 +156,10 @@
             <div class="card-body">
                 <p class="preco"> Preço: R$ 4.00</p>
                 <div class="input-group mb-3">
-                    <input type="number" class="form-control" placeholder="Quantidade desejada">
-                    <button class="btn btn-outline btn-success" type="button" id="button-addon2">+</button>
+                  <input type="number" class="form-control" value="0" id="qtdagua" name="qtdagua" placeholder="Quantidade desejada"> 
+                  <form>
+                  <button class="btn btn-outline btn-success" type="button"  value="Enviar">+</button>
+                </form>
                   </div>
             </div>
           </div>
@@ -174,7 +187,7 @@
     </center>
       <br> <br> <br>
       
-       <a href="bandeja.html"> <button" id="botao" class="btn btn-success">Finalizar compra</button> </a>
+       <a href="bandeja.html"> <button" onclick="produtos()"id="botao" class="btn btn-success">Finalizar compra</button> </a>
        <br>
        <img src="img/buy.svg" id="compra">
 

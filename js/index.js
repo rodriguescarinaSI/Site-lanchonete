@@ -47,7 +47,7 @@ function produtos(el) {
     }
 
 
-
+    alert("O valor total é de " + soma);
     document.getElementById("campo1").innerHTML = 'R$: '+soma;
     
     var display = document.getElementById(el).style.display;
@@ -55,6 +55,9 @@ function produtos(el) {
       document.getElementById(el).style.display = 'block';
     else
       document.getElementById(el).style.display = 'none';
+
+
+      
 
 }
 

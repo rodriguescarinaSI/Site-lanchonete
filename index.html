@@ -70,7 +70,7 @@
                 <p class="card-text">Tão bronzeada quanto aquela(e) gato(a) na praia de Bertioga, assim é nossa coxinha: aves selecionadas da França, massa mineira e toque final com ervas indiana. Invés de dormir de conchinha com o/a crush, vem comer uma coxinha com a gente! 😈😏🐔</p>
               </div>
               <div class="card-body">
-                  <p class="preco"> Preço: R$4.00</p>
+                  <p class="preco"> Preço: R$5.00</p>
                   <div class="input-group mb-3">
                     <input type="number" class="form-control" value="0" id="qtdcoxinha" name="qtdcoxinha" placeholder="Quantidade desejada">
                     <form>
@@ -90,7 +90,7 @@
             </div>
             <div class="card-body">
                 <br>
-                <p class="preco"> Preço: R$ 4.00</p>
+                <p class="preco"> Preço: R$ 3.00</p>
                 <div class="input-group mb-3">
                   <input type="number" class="form-control" value="0" id="qtdenrolado" name="qtdenrolado" placeholder="Quantidade desejada">
                     <form>
@@ -112,7 +112,7 @@
                 <p class="card-text">Co-ca Co-la gostosa e geladinha! Vem cá tomar essa coquinha, só não pode ficar louquinha com essa explosão de gás! 🥤🧊 </p>
                 <div class="card-body">
                     <br>
-                  <p class="preco"> Preço: R$ 4.00</p>
+                  <p class="preco"> Preço: R$ 4.50</p>
                   <div class="input-group mb-3">
                     <input type="number" class="form-control" value="0" id="qtdcoca" name="qtdcoca" placeholder="Quantidade desejada">
                     <form>
@@ -133,7 +133,7 @@
               <p class="card-text">Cafézinho mineiro é tudo de bão né meu povo? Vem provar desse grão conosco! ☕🔥 </p>
               <div class="card-body">
                   <br><br>
-                <p class="preco"> Preço: R$ 4.00</p>
+                <p class="preco"> Preço: R$ 3.00</p>
                 <div class="input-group mb-3">
                   <input type="number" class="form-control" value="0" id="qtdcafe" name="qtdcafe" placeholder="Quantidade desejada">
                   <form>
@@ -154,7 +154,7 @@
               
             </div>
             <div class="card-body">
-                <p class="preco"> Preço: R$ 4.00</p>
+                <p class="preco"> Preço: R$ 2.00</p>
                 <div class="input-group mb-3">
                   <input type="number" class="form-control" value="0" id="qtdagua" name="qtdagua" placeholder="Quantidade desejada"> 
                   <form>
@@ -168,33 +168,68 @@
 
       <br><br>
       
-      <center>
+  
+        
+    
+        
+      
+
+        <center>
       <div class="container">
         <div class="row">
           <div class="col">
-            <div class="form-switch">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                <label class="form-check-label" class="txt" for="flexSwitchCheckDefault">Desconto para estudante?</label>
-            </div>
+            <p>Desconto para estudante?</p>
+            <select id="estudante" class="custom-select custom-select-lg mb-3">
+              <option value="não"> Não </option>
+           <option value="Sim"> Sim </option>
+          
+            </select>
           </div>
+          
           <div class="col">
-            <div class="form-switch">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                <label class="form-check-label" class="txt" for="flexSwitchCheckDefault">Embalagem para viagem</label>
-            </div>
+            <p>Deseja embalagem para viagem?</p>
+            <select id="viagem" class="custom-select custom-select-sm">
+              <option value="não"> Não </option>
+              <option value="Sim"> Sim </option>
+              
+            </select>
           </div>
-        </div>
+        </center>
+
     </center>
       <br> <br> <br>
       
-       <a href="bandeja.html"> <button" onclick="produtos()"id="botao" class="btn btn-success">Finalizar compra</button> </a>
+      <a href="#minhaDiv"> <button   onclick="produtos('minhaDiv')" id="botao" class="btn btn-success">Finalizar compra</button> </a>
        <br>
-       <img src="img/buy.svg" id="compra">
 
-     
+<br><br>  
 
 
-</div>
+
+
+<div id="minhaDiv" style="display:none" class="container">
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+
+      <div class="col">
+          <div class="card h-100">
+
+            <div class="card-body">
+                <p class="preco"> Preço: <div id="campo1">R$ 0
+                  </div></p>
+            </div>
+          </div>
+        </div>
+        <button id="cancelar" onclick="produtos('minhaDiv')" class="btn btn-danger">Cancelar</button>
+        &nbsp;
+        <a id="cancelar" href="bandeja.html"> <button   class="btn btn-success">Pagar</button></a>
+      </div>
+      
+    </div>
+</div> 
+
+<br><br>
+
+
 
 
 <footer class="bg-light text-center text-lg-start">
@@ -264,7 +299,17 @@
     <a class="text-dark" href="#">Caçadores de sabiu</a>
   </div>
 </footer>
-
+<script>
+  $('.nav a[href^="#"]').on('click', function(e) {
+	e.preventDefault();
+	var id = $(this).attr('href'),
+			targetOffset = $(id).offset().top;
+			
+	$('html, body').animate({ 
+		scrollTop: targetOffset - 100
+	}, 500);
+});
+</script>
 
 
 </body>

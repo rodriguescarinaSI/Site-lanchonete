@@ -40,3 +40,26 @@
 .txt{
   font-style: italic;
 }
+
+#campo1{
+  font-size: 40px;
+}
+
+#cancelar{
+  width: 100px;
+  height: 40px;
+  margin-top: auto;
+}
+
+.a #cancelar {
+  width: 100px;
+  height: 40px;
+  margin-top: auto;
+}
+
+#titulo{
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-style: italic;
+  color: red;
+}
+
